@@ -1,0 +1,36 @@
+<script>
+/* jshint esversion: 6 */
+var MyMixin = subclass => class extends subclass{
+
+    static get config() {
+        // properties, observers meta data
+        return {
+            properties: {
+                selected: {
+                    type: Object,
+                    observer: "_selectedChanged"
+                },
+                time: {
+                    type: Number,
+                    value: 3000
+                }
+            }
+        };
+    }
+
+    connectedCallback() {
+        super.connectedCallback();
+        this.selected = this.firstElementChild;
+        this.startCarousel();
+    }
+
+    _selectedChanged(selected, oldSelected) {
+        if (oldSelected) {
+            oldSelected.removeAttribute("selected");
+        }
+        if (selected) {
+            selected.setAttribute("selected", "");
+        }
+    }
+}
+</script>
