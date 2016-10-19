@@ -12,4 +12,4 @@ Lessons:
 - :white_check_mark: 6 Optimizing Layout
 - :white_check_mark: 7 Lazy-load Images
 - :white_check_mark: 8 Adding Transitions
-- :white_check_mark: 9 Handling Touch Events (Optional)
+- 9 Handling Touch Events (Optional) TODO(https://codelabs.developers.google.com/codelabs/polymer-2-carousel/index.html?index=..%2F..%2Fpolymer-summit-2016&viewga=UA-39334307-12#8)https://codelabs.developers.google.com/codelabs/polymer-2-carousel/index.html?index=..%2F..%2Fpolymer-summit-2016&viewga=UA-39334307-12#8[]
